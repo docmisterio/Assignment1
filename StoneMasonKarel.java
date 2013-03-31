@@ -20,7 +20,7 @@ public class StoneMasonKarel extends SuperKarel {
 				move();
 			} 
 		}
-		if {
+		if (frontIsBlocked()) {
 			buildColumn();
 			returnToGround();
 		}
