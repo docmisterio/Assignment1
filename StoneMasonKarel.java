@@ -13,14 +13,17 @@ import stanford.karel.*;
 public class StoneMasonKarel extends SuperKarel {
 
 	public void run() {
-		while (frontIsClear()) {
+		if (frontIsClear()) {
 			buildColumn();
 			returnToGround();
 			for (int i = 0; i < 4; i++){
 				move();
 			} 
 		}
-		
+		else {
+			buildColumn();
+			returnToGround();
+		}
 	}
 		 
 		
