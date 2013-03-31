@@ -45,6 +45,7 @@ public class StoneMasonKarel extends SuperKarel {
 		}
 		turnLeft();
 	}
-	}
-
 }
+
+
+
