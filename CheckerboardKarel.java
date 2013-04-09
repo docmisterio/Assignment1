@@ -16,9 +16,12 @@ public class CheckerboardKarel extends SuperKarel {
 	}
 	
 	private void makeARow() {
-		putBeeper();
-		move();
-		move();
+		while (frontIsClear()) {
+			putBeeper();
+			move();
+			move();
+		}
+		
 
 	}
 }
