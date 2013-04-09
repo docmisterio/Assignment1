@@ -13,6 +13,12 @@ public class CheckerboardKarel extends SuperKarel {
 
 	public void run() {
 		makeARow();
+		repositionForRowToTheWest();
+		makeARow();
+		repositionForRowToTheEast();
+		makeRow();
+	} else {
+		turnAround();
 	}
 	
 	private void makeARow() {
