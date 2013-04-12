@@ -17,6 +17,7 @@ public class CheckerboardKarel extends SuperKarel {
 			moveWell();
 			moveWell();
 		}
+		moveWell();
 	}
 
 	private void moveWell() {
