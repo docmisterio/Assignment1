@@ -22,9 +22,12 @@ public class CheckerboardKarel extends SuperKarel {
 	}
 	
 	private void makeARow() {
-		move();
-		putBeeper();
-		move();
+		while (frontIsClear()){
+			move();
+			putBeeper();
+			move();
+		}
+		
 		}	
 	}
 
