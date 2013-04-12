@@ -14,6 +14,7 @@ public class CheckerboardKarel extends SuperKarel {
 	public void run() {
 		while (leftIsClear()) {
 			moveWell();
+		}
 }
 	
 	private void moveWell() {
