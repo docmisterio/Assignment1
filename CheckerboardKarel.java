@@ -34,10 +34,18 @@ public class CheckerboardKarel extends SuperKarel {
 	
 	private void checkCeilingAndMoveForWest() {
 		turnLeft();
-		if (frontIsClear()){
+		if (frontIsClear()) {
 			move();
 		}
 		turnLeft();
-	}	
+	}
+	
+	private void checkCeilingAndMoveForWest() {
+		turnRight();
+		if (frontIsClear()) {
+			move();
+		}
+		turnRight();
+	}
 }
 
