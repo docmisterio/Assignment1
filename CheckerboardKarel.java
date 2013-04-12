@@ -23,6 +23,14 @@ public class CheckerboardKarel extends SuperKarel {
 		}
 }
 	
+	private moveWell() {
+		move();
+		if (frontIsClear()) {
+			move();
+		}
+	}
+	
+	
 	private void makeARow() {
 		while (frontIsClear()){
 			
