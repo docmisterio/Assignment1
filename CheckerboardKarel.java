@@ -15,8 +15,8 @@ public class CheckerboardKarel extends SuperKarel {
 		while (leftIsClear()) {
 			moveWell();
 		}
-}
-	
+	}
+
 	private void moveWell() {
 		if (frontIsClear()) {
 			move();
@@ -25,29 +25,26 @@ public class CheckerboardKarel extends SuperKarel {
 				turnLeft();
 				move();
 				turnLeft();
-			}
-			else if (facingWest()) {
-					turnRight();
-					move();
-					turnRight();
-				
+			} else if (facingWest()) {
+				turnRight();
+				move();
+				turnRight();
 			}
 		}
 	}
-	
-	
+
 	private void makeARow() {
-		while (frontIsClear()){
-			
+		while (frontIsClear()) {
+
 			move();
-			if (frontIsClear()){
+			if (frontIsClear()) {
 				move();
 				putBeeper();
 			}
 		}
 
 	}
-	
+
 	private void checkCeilingAndMoveForWest() {
 		turnLeft();
 		if (frontIsClear()) {
@@ -55,7 +52,7 @@ public class CheckerboardKarel extends SuperKarel {
 		}
 		turnLeft();
 	}
-	
+
 	private void checkCeilingAndMoveForEast() {
 		turnRight();
 		if (frontIsClear()) {
@@ -64,4 +61,3 @@ public class CheckerboardKarel extends SuperKarel {
 		turnRight();
 	}
 }
-
