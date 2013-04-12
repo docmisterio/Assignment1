@@ -14,7 +14,7 @@ public class CheckerboardKarel extends SuperKarel {
 	public void run() {
 		makeARow();
 		checkCeilingAndMoveForWest();
-		//makeARow();
+		makeARow();
 		//checkCeilingAndMoveForEast();
 		//makeRow();
 	// } else {
