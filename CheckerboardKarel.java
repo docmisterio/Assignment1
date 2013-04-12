@@ -21,6 +21,9 @@ public class CheckerboardKarel extends SuperKarel {
 			if (leftIsBlocked()) {
 				turnAround();
 			}
+			else {
+				turnAround();
+			}
 			}
 		}
 	
