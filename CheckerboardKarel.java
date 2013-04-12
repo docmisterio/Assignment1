@@ -20,19 +20,17 @@ public class CheckerboardKarel extends SuperKarel {
 	private void moveWell() {
 		if (frontIsClear()) {
 			move();
-		}
-		else {
+		} else {
 			if (facingEast()) {
 				turnLeft();
 				move();
 				turnLeft();
 			}
-			else {
-				if (facingWest()) {
+			else if (facingWest()) {
 					turnRight();
 					move();
 					turnRight();
-				}
+				
 			}
 		}
 	}
