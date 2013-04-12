@@ -13,6 +13,8 @@ public class CheckerboardKarel extends SuperKarel {
 
 	public void run() {
 		while (leftIsClear()) {
+			putBeeper();
+			moveWell();
 			moveWell();
 		}
 	}
