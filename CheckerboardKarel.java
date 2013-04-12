@@ -13,18 +13,20 @@ public class CheckerboardKarel extends SuperKarel {
 
 	public void run() {
 		makeARow();
-		checkCeilingAndMoveForWest();
-		makeARow();
-		checkCeilingAndMoveForEast();
-		makeRow();
-	} else {
-		turnAround();
+		//checkCeilingAndMoveForWest();
+		//makeARow();
+		//checkCeilingAndMoveForEast();
+		//makeRow();
+	//} else {
+		//turnAround();
 	}
 	
 	private void makeARow() {
 		while (frontIsClear()) {
+			for (int i = 0; i > 2; i ++) {
 			putBeeper();
 			move();
+			}
 		}
 		
 
