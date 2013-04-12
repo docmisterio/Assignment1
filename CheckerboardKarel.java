@@ -12,16 +12,15 @@ import stanford.karel.*;
 public class CheckerboardKarel extends SuperKarel {
 
 	public void run() {
-		while (leftIsClear()) {
+		if (leftIsClear()) {
 			makeARow();
 			checkCeilingAndMoveForWest();
 			makeARow();
 			checkCeilingAndMoveForEast();
 			makeARow();
+		} else {
+			turnAround();
 		}
-		
-	//} else {
-		//turnAround();
 	}
 	
 	private void makeARow() {
