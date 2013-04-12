@@ -35,6 +35,9 @@ public class CheckerboardKarel extends SuperKarel {
 	}
 	
 	private void checkCeilingAndMoveForWest() {
+		if (noBeepersPresent()) {
+			putBeeper();
+		}
 		turnLeft();
 		if (frontIsClear()) {
 			move();
