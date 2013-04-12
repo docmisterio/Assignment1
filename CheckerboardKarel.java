@@ -13,18 +13,10 @@ public class CheckerboardKarel extends SuperKarel {
 
 	public void run() {
 		while (leftIsClear()) {
-			makeARow();
-			checkCeilingAndMoveForWest();
-			makeARow();
-			checkCeilingAndMoveForEast();
-		if (frontIsBlocked()) {
-			turnAround();
-		}
-		}
+			moveWell();
 }
 	
-	private moveWell() {
-		move();
+	private void moveWell() {
 		if (frontIsClear()) {
 			move();
 		}
