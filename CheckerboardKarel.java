@@ -20,7 +20,6 @@ public class CheckerboardKarel extends SuperKarel {
 			makeARow();
 			}
 		}
-	}
 	
 	private void makeARow() {
 		while (frontIsClear()){
