@@ -13,7 +13,7 @@ public class CheckerboardKarel extends SuperKarel {
 
 	public void run() {
 		makeARow();
-		//checkCeilingAndMoveForWest();
+		checkCeilingAndMoveForWest();
 		//makeARow();
 		//checkCeilingAndMoveForEast();
 		//makeRow();
@@ -28,9 +28,16 @@ public class CheckerboardKarel extends SuperKarel {
 			if (frontIsClear()){
 				move();
 			}
-			
 		}
-		
-		}	
+
 	}
+	
+	private void checkCeilingAndMoveForWest() {
+		turnLeft();
+		if (frontIsClear()){
+			move();
+		}
+		turnLeft();
+	}	
+}
 
