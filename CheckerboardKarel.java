@@ -42,7 +42,12 @@ public class CheckerboardKarel extends SuperKarel {
 					move();
 					turnRight();
 				}
+			} else if (facingNorth()) {
+				turnAround();
+			} else if (facingSouth()) {
+				turnAround();
 			}
+			
 		}
 	}
 }
