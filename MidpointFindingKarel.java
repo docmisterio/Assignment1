@@ -14,6 +14,20 @@ import stanford.karel.*;
 
 public class MidpointFindingKarel extends SuperKarel {
 
-	// You fill in this part
+	public void run() {
+		findMiddle();
+	}
 
+	private void findMiddle() {
+		layALine();
+	}
+	
+	private void layALine() {
+		while (frontIsClear()) {
+			putBeeper();
+			move();
+		}
+	}
+	
+	
 }
