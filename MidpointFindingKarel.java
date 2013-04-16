@@ -26,8 +26,6 @@ public class MidpointFindingKarel extends SuperKarel {
 		layALine();
 		collectBeepers();
 		moveToLastBeeper();
-		collectBeepers();
-		moveToLastBeeper();
 	}
 
 	/*
