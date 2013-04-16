@@ -53,8 +53,10 @@ public class MidpointFindingKarel extends SuperKarel {
 	/*
 	 * precondition:
 	 */
-	private void superPickBeeper() {
-		
+	private void amIOnABeeper() {
+		if (beepersPresent()) {
+			
+		}
 	}
 
 }
