@@ -25,6 +25,8 @@ public class MidpointFindingKarel extends SuperKarel {
 		//moveFreely();
 	}
 
+	//pre-condition: 
+	//post-condition:
 	private void layALine() {
 		while (frontIsClear()) {
 			putBeeper();
