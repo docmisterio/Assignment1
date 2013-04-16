@@ -22,7 +22,7 @@ public class MidpointFindingKarel extends SuperKarel {
 		layALine();
 		moveFreely();
 		moveFreely();
-		//pickAndMove();
+		//moveFreely();
 	}
 
 	private void layALine() {
