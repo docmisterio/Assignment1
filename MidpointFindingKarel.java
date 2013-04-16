@@ -56,6 +56,13 @@ public class MidpointFindingKarel extends SuperKarel {
 	private void ifBeeperPickIt() {
 		if (beepersPresent()) {
 			pickBeeper();
+			moveToLastBeeper();
+		}
+	}
+	
+	private void moveToLastBeeper() {
+		while (beepersPresent()) {
+			move();
 		}
 	}
 
