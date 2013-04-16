@@ -36,6 +36,7 @@ public class MidpointFindingKarel extends SuperKarel {
 		turnAround();
 		while (facingWest()) {
 			pickBeeper();
+			move();
 		}
 		move();
 	}
