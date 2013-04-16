@@ -42,8 +42,8 @@ public class MidpointFindingKarel extends SuperKarel {
 
 	/*
 	 * precondition: Karel has just finished laying beepers out behind him is
-	 * facing east postcondition: Karel has turned around and moved to the other
-	 * end of the the world over all the beepers
+	 * facing east postcondition: Karel has turned around and started to ask if
+	 * he's on a Beeper
 	 */
 	private void collectBeepers() {
 		turnAround();
@@ -55,7 +55,7 @@ public class MidpointFindingKarel extends SuperKarel {
 	 */
 	private void amIOnABeeper() {
 		if (beepersPresent()) {
-			
+			pickBeeper();
 		}
 	}
 
