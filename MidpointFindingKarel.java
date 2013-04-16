@@ -40,5 +40,4 @@ public class MidpointFindingKarel extends SuperKarel {
 			}
 		}
 	}
-
 }
