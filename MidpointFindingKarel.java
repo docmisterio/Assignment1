@@ -35,6 +35,7 @@ public class MidpointFindingKarel extends SuperKarel {
 	 * the west end of the world
 	 */
 	private void layALine() {
+		move();
 		while (frontIsClear()) {
 			putBeeper();
 			move();
