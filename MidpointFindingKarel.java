@@ -26,7 +26,7 @@ public class MidpointFindingKarel extends SuperKarel {
 		layALine();
 		turnAround();
 		moveToBeeper();
-		//pickAndMoveToWall();
+		pickAndMoveToWall();
 	}
 
 	/*
@@ -48,6 +48,17 @@ public class MidpointFindingKarel extends SuperKarel {
 	 */
 	private void moveToBeeper() {
 		while (noBeepersPresent()) {
+			move();
+		}
+	}
+	
+	/*
+	 * Precondition: 
+	 */
+	private void pickAndMoveToWall() {
+		pickBeeper();
+		move();
+		while (beepersPresent()) {
 			move();
 		}
 	}
