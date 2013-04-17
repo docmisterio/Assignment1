@@ -24,21 +24,21 @@ public class MidpointFindingKarel extends SuperKarel {
 	 */
 	private void findMiddle() {
 		layALine();
-		collectBeepers();
-		moveToLastBeeper();
+		turnAround();
+		moveToBeeper();
+		pickAndMoveToWall();
 	}
 
 	/*
 	 * pre-condition: Karel is facing east at 1x1 post-condition: Karel is
 	 * facing east has laid out a row of beepers behind him and has ended up at
-	 * the end of the world
+	 * the west end of the world
 	 */
 	private void layALine() {
 		while (frontIsClear()) {
 			putBeeper();
 			move();
 		}
-		putBeeper();
 	}
 
 	/*
@@ -46,27 +46,5 @@ public class MidpointFindingKarel extends SuperKarel {
 	 * facing east postcondition: Karel has turned around and started to ask if
 	 * he's on a Beeper and if he is to pick it
 	 */
-	private void collectBeepers() {
-		turnAround();
-		ifBeeperPickIt();
-	}
-
-	/*
-	 * precondition:
-	 */
-	private void ifBeeperPickIt() {
-		if (beepersPresent()) {
-			pickBeeper();
-		}
-		move();
-	}
-	
-	private void moveToLastBeeper() {
-		while (beepersPresent()) {
-			if (frontIsClear()) {
-				move();
-			}
-		}
-	}
-
+	private void moveToBeeper();
 }
