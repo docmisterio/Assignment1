@@ -24,7 +24,7 @@ public class MidpointFindingKarel extends SuperKarel {
 	 */
 	private void findMiddle() {
 		layALine();
-		while (leftIsClear()) {
+		while (frontIsClear()) {
 			turnAround();
 			moveToBeeper();
 			pickAndMoveToEnd();
