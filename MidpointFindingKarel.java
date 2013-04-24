@@ -51,21 +51,6 @@ public class MidpointFindingKarel extends SuperKarel {
 	 * facing east or west. postcondition: started to ask if he's on a Beeper.
 	 */
 	private void moveToBeeper() {
-		while (facingWest()) {
-			if (noBeepersPresent()) {
-				move();
-			} else {
-				turnAround();
-			}
-
-		}
-		while (facingEast()) {
-			if (noBeepersPresent()) {
-				move();
-			} else {
-				turnAround();
-			}
-		}
 		
 	}
 
@@ -75,10 +60,6 @@ public class MidpointFindingKarel extends SuperKarel {
 	 * opposite side ready to turnAround.
 	 */
 	private void pickAndMoveToEnd() {
-		pickBeeper();
-		move();
-		while (beepersPresent()) { // the problem is here...
-			move();
-		}
+		
 	}
 }
