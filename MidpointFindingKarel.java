@@ -65,7 +65,7 @@ public class MidpointFindingKarel extends SuperKarel {
 	private void pickAndMoveToEnd() {
 		pickBeeper();
 		move();
-		if (beepersPresent()) { //the problem is here... 
+		while (beepersPresent()) { //the problem is here... 
 			move();
 		}
 	}
